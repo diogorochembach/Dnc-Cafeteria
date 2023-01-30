@@ -1,31 +1,86 @@
 body {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 html {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+.fazer__pedido {
+  width: 10rem;
+}
+
+.image__banner {
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #edebe9 !important;
+  border-radius: 1em !important;
+  min-height: 400px;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.button_buy {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+main,
+nav {
+  background: #f6f5fb !important;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+.modal__container {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content {
+  position: relative;
+  background-color: #fefefe;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.modal__content .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 0.8rem;
   }
-  
-  .fazer__pedido {
-    width: 10rem;
-  }
-  
-  .image__banner {
-    object-fit: cover;
-  }
-  
-  .card {
-    border: 1px solid #edebe9 !important;
-    border-radius: 1em !important;
-  }
-  
-  main,
-  nav {
-    background: #f6f5fb !important;
-  }
-  
-  @media only screen and (max-width: 800px) {
-    html {
-      font-size: 0.8rem;
-    }
-  } 
+}
